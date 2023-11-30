@@ -1,7 +1,6 @@
- export function App() {
+import { ThemeProvider } from 'styled-components'
+import { defaultTheme } from './styles/themes/default'
 
-  return (
-   <h1>Project</h1>
-  )
+export function App() {
+  return <ThemeProvider theme={defaultTheme}></ThemeProvider>
 }
-
